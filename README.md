@@ -1,89 +1,21 @@
-# ServiceLink NG
+# Next.js template
 
-A modern marketplace platform connecting service providers and customers in Nigeria.
+This is a Next.js template with shadcn/ui.
 
-## Project Structure
+## Adding components
 
-```
-servicelink-ng/
-├── frontend/          # Next.js React application
-├── backend/           # Node.js Express API
-├── docs/              # Documentation
-└── .github/           # GitHub workflows and config
-```
+To add components to your app, run the following command:
 
-## Tech Stack
-
-- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
-- **Backend**: Node.js, Express, PostgreSQL
-- **Database**: PostgreSQL
-- **Deployment**: (To be configured in Sprint 4)
-
-## Development Roadmap
-
-### Sprint 1 (Week 1) - Foundation
-- Project setup
-- Homepage
-- Authentication UI
-- Navigation
-- Search page
-
-### Sprint 2 (Week 2) - Backend & Auth
-- Backend API
-- PostgreSQL database
-- User authentication
-- Business registration
-
-### Sprint 3 (Week 3) - Core Features
-- Business dashboard
-- Admin dashboard
-- Reviews
-- Search refinement
-
-### Sprint 4 (Week 4) - Enhancement & Deployment
-- Maps integration
-- Premium plans
-- Notifications
-- Deployment
-
-### Sprint 5 - Mobile
-- Android app
-- iPhone app
-- AI features
-
-## Getting Started
-
-### Prerequisites
-- Node.js 18+
-- npm or yarn
-- PostgreSQL 14+
-
-### Installation
-
-1. Clone the repository
 ```bash
-git clone https://github.com/aliyuyau96-dotcom/Service-link-ng-.git
-cd Service-link-ng-
+npx shadcn@latest add button
 ```
 
-2. Setup frontend
-```bash
-cd frontend
-npm install
-npm run dev
+This will place the ui components in the `components` directory.
+
+## Using components
+
+To use the components in your app, import them as follows:
+
+```tsx
+import { Button } from "@/components/ui/button";
 ```
-
-3. Setup backend
-```bash
-cd backend
-npm install
-npm run dev
-```
-
-## Contributing
-
-Please follow the development guidelines in the sprints above.
-
-## License
-
-MIT
